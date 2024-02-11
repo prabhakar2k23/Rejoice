@@ -1,0 +1,354 @@
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nb";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%; 
+    position: relative;
+}
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.321); */
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; 
+    padding: 3vw 3vw;
+    font-family: "nb";
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#page1-content h1{
+    font-family: "rejoy";
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+#page1-content h1 span{
+    display: inline-block;
+    font-family: "rejoy";
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page2-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+#page2-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+}
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+#page2 .elem{
+    overflow: hidden;
+}
+#page2 .elem h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+    font-family: "nb";
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+.page3-top{
+    text-align: center;
+}
+.page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.page3-top h4 span{
+    font-size: 0.7vw;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.page3-top h2{
+    font-size: 4vw;
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: "nb";
+}
+
+#page3-text{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+#page3-text h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+#page3-elements{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.65vw;
+}
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 1s;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+#page4{
+    min-height: 75vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page4-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+#page4-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 36%;
+}
+#page4 .elen{
+    overflow: hidden;
+}
+#page4 .elen h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+    font-family: "nb";
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page5 video{
+    height: 140%;
+}
+#page5 svg{
+    position: absolute;
+    height: 65%;
+}
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page6-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+#page6-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 36%;
+}
+.page6-text{
+    overflow: hidden;
+}
+.page6-text h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+    font-family: "nb";
+}
+#page7{
+    width: 100%;
+    position: relative;
+    padding: vw 2.8vw;
+    margin-top: -1vw;
+}
+
+#page7-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+#page7-top h1{
+    font-size: 8vw;
+    font-weight: 100;
+    width: 96%;
+}
+#page7-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+}
+#loader h3{
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#logo{
+    height: 60vh;
+    width: 100%;
+    margin-top: -3.2vw;
+    overflow:hidden;
+}
+#logo-slide{
+    white-space: nowrap;
+    animation: 38s slide infinite linear;
+}
+#logo-slide img{
+    width: 22vw;
+    margin: 0 0.2vw;
+}
+#page8{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    padding-top: 9vw;
+}
+.page8-top{
+    text-align: center;
+}
+.page8-top h4{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.page8-top h2{
+    font-size: 4vw;
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: "nb";
+}
